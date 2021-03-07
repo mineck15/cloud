@@ -3,7 +3,7 @@ MAINTAINER ck769184@gmail.com
 RUN yum install -y httpd \
   zip \
   unzip
-  ADDhttps://www.free-css.com/assets/files/free-css-templates/download/page264/rocket-internet.zip /var/www/html/
+  ADD https://www.free-css.com/assets/files/free-css-templates/download/page264/rocket-internet.zip /var/www/html/
   WORKDIR /var/www/html
   RUN unzip rocket-internet.zip
   RUN cp -rvf rocket-internet/* .
